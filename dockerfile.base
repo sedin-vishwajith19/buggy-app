@@ -1,0 +1,27 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV RUBY_VERSION=3.3.8
+
+RUN apt-get update && apt-get install -y \
+  curl wget build-essential libssl-dev libreadline-dev zlib1g-dev \
+  libyaml-dev libgdbm-dev libffi-dev libncurses5-dev libtool \
+  bison autoconf pkg-config nodejs yarn \
+  libmysqlclient-dev default-mysql-client \
+  imagemagick \
+  && rm -rf /var/lib/apt/lists/*
+
+
+RUN wget https://cache.ruby-lang.org/pub/ruby/3.3/ruby-${RUBY_VERSION}.tar.gz && \
+    tar -xzf ruby-${RUBY_VERSION}.tar.gz && \
+    cd ruby-${RUBY_VERSION} && \
+    ./configure --disable-install-doc && \
+    make -j"$(nproc)" && \
+    make install && \
+    cd .. && rm -rf ruby-${RUBY_VERSION} ruby-${RUBY_VERSION}.tar.gz
+
+RUN gem install rails -v 8.0.2 --no-document
+
+RUN ruby -v && rails -v
+
+CMD ["irb"]
