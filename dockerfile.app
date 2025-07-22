@@ -2,7 +2,8 @@ FROM ruby:3.3.8
 
 RUN apt-get update -qq && apt-get install -y \
     build-essential \
-    libmysqlclient-dev \
+    libmariadb-dev \
+    libmariadb-dev-compat \
     nodejs \
     yarn \
     libpq-dev \
