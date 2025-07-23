@@ -1,4 +1,4 @@
-FROM ruby:3.3.8
+FROM 156916773321.dkr.ecr.ap-south-1.amazonaws.com/ubuntu:latest
 
 RUN apt-get update -qq && apt-get install -y \
     build-essential \
