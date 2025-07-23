@@ -2,7 +2,8 @@ FROM 156916773321.dkr.ecr.ap-south-1.amazonaws.com/ubuntu:latest
 
 RUN apt-get update -qq && apt-get install -y \
     build-essential \
-    libmysqlclient-dev \
+    libmariadb-dev \
+    libmariadb-dev-compat \
     nodejs \
     yarn \
     libpq-dev \
