@@ -13,4 +13,4 @@ RAILS_ENV=production bin/rails db:migrate:cable
 RAILS_ENV=production bin/rails db:create:queue
 RAILS_ENV=production bin/rails db:migrate:queue
 
-exec "$@"
+RAILS_ENV=production bundle exec puma -C config/puma.rb
