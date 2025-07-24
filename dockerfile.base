@@ -1,4 +1,4 @@
-FROM 156916773321.dkr.ecr.ap-south-1.amazonaws.com/ubuntu:latest
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV RUBY_VERSION=3.3.8
