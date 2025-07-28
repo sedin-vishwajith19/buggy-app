@@ -1,0 +1,257 @@
+
+An error occurred (ExpiredTokenException) when calling the DeleteService operation: The security token included in the request is expired
+
+An error occurred (RequestExpired) when calling the StopInstances operation: Request has expired.
+
+An error occurred (ExpiredToken) when calling the StopDBInstance operation: The security token included in the request is expired
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:ap-south-1:156916773321:service/ecs-cluster-vishwa/ror-app-service",
+        "serviceName": "ror-app-service",
+        "clusterArn": "arn:aws:ecs:ap-south-1:156916773321:cluster/ecs-cluster-vishwa",
+        "loadBalancers": [],
+        "serviceRegistries": [],
+        "status": "DRAINING",
+        "desiredCount": 0,
+        "runningCount": 1,
+        "pendingCount": 0,
+        "launchType": "EC2",
+        "taskDefinition": "arn:aws:ecs:ap-south-1:156916773321:task-definition/vishwa-task-definition:13",
+        "deploymentConfiguration": {
+            "deploymentCircuitBreaker": {
+                "enable": false,
+                "rollback": false
+            },
+            "maximumPercent": 100,
+            "minimumHealthyPercent": 0
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/7847156319214913926",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:ap-south-1:156916773321:task-definition/vishwa-task-definition:13",
+                "desiredCount": 0,
+                "pendingCount": 0,
+                "runningCount": 1,
+                "failedTasks": 0,
+                "createdAt": "2025-07-26T12:24:38.392000+05:30",
+                "updatedAt": "2025-07-26T12:26:46.232000+05:30",
+                "launchType": "EC2",
+                "rolloutState": "COMPLETED",
+                "rolloutStateReason": "ECS deployment ecs-svc/7847156319214913926 completed."
+            }
+        ],
+        "events": [
+            {
+                "id": "5094b73d-7bb6-41b4-95b8-4f606627fe0b",
+                "createdAt": "2025-07-26T12:26:46.238000+05:30",
+                "message": "(service ror-app-service) has reached a steady state."
+            },
+            {
+                "id": "5b08ad85-fd5f-47e0-914c-740768691223",
+                "createdAt": "2025-07-26T12:26:46.237000+05:30",
+                "message": "(service ror-app-service) (deployment ecs-svc/7847156319214913926) deployment completed."
+            },
+            {
+                "id": "2763a586-4552-4765-ad31-27c7305431e4",
+                "createdAt": "2025-07-26T12:25:33.637000+05:30",
+                "message": "(service ror-app-service) has started 1 tasks: (task c5a171112c9e424bb2acf94260d32209)."
+            },
+            {
+                "id": "7bd607ab-ff1a-4ec7-9466-45b3908348f4",
+                "createdAt": "2025-07-26T12:24:51.851000+05:30",
+                "message": "(service ror-app-service) has stopped 1 running tasks: (task 73d2e3cec020422cb5b0f3a935785447)."
+            },
+            {
+                "id": "fdc12297-214c-449a-bc0a-9b9529bee8f2",
+                "createdAt": "2025-07-26T12:18:58.091000+05:30",
+                "message": "(service ror-app-service) has reached a steady state."
+            },
+            {
+                "id": "a09a4afb-f140-40dc-881b-c50ca26f4383",
+                "createdAt": "2025-07-26T12:18:58.090000+05:30",
+                "message": "(service ror-app-service) (deployment ecs-svc/1215588078310987214) deployment completed."
+            },
+            {
+                "id": "18760bb1-40ad-4a47-9c8e-c38e1297cb85",
+                "createdAt": "2025-07-26T12:18:04.713000+05:30",
+                "message": "(service ror-app-service) has started 1 tasks: (task 73d2e3cec020422cb5b0f3a935785447)."
+            },
+            {
+                "id": "41c9363f-49b5-4fe8-8988-cd84a1516671",
+                "createdAt": "2025-07-26T12:17:24.513000+05:30",
+                "message": "(service ror-app-service) has stopped 1 running tasks: (task 6098fe626d364d06856acd5889de4642)."
+            },
+            {
+                "id": "654febe5-6109-40f6-96a0-358633b4b9c7",
+                "createdAt": "2025-07-26T11:58:40.623000+05:30",
+                "message": "(service ror-app-service) was unable to place a task because no container instance met all of its requirements. The closest matching (container-instance 929a3d4ae77f47f690630ccdc209f528) is already using a port required by your task. For more information, see the Troubleshooting section of the Amazon ECS Developer Guide."
+            },
+            {
+                "id": "e813763e-4e5f-4f75-881b-7beb9e9fab6d",
+                "createdAt": "2025-07-26T11:32:18.960000+05:30",
+                "message": "(service ror-app-service) has reached a steady state."
+            },
+            {
+                "id": "87bd33e8-c1d8-4886-86c5-f863d7452499",
+                "createdAt": "2025-07-26T11:32:18.959000+05:30",
+                "message": "(service ror-app-service) (deployment ecs-svc/7141921418828438354) deployment completed."
+            },
+            {
+                "id": "4bc3aa22-562f-4eba-90e5-456f592585cd",
+                "createdAt": "2025-07-26T11:32:08.524000+05:30",
+                "message": "(service ror-app-service) has started 1 tasks: (task 6098fe626d364d06856acd5889de4642)."
+            }
+        ],
+        "createdAt": "2025-07-26T11:31:51.957000+05:30",
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "healthCheckGracePeriodSeconds": 0,
+        "schedulingStrategy": "REPLICA",
+        "deploymentController": {
+            "type": "ECS"
+        },
+        "createdBy": "arn:aws:iam::156916773321:role/aws-reserved/sso.amazonaws.com/ap-south-1/AWSReservedSSO_Admin-Except-UserGroupManagement_84ea0e7a231f65f8",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE",
+        "enableExecuteCommand": false,
+        "availabilityZoneRebalancing": "DISABLED"
+    }
+}
+{
+    "StoppingInstances": [
+        {
+            "InstanceId": "i-000cb4007fcff8a47",
+            "CurrentState": {
+                "Code": 64,
+                "Name": "stopping"
+            },
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        },
+        {
+            "InstanceId": "i-04134c8e5eff1686d",
+            "CurrentState": {
+                "Code": 64,
+                "Name": "stopping"
+            },
+            "PreviousState": {
+                "Code": 16,
+                "Name": "running"
+            }
+        }
+    ]
+}
+{
+    "DBInstance": {
+        "DBInstanceIdentifier": "vishwa-database",
+        "DBInstanceClass": "db.t4g.micro",
+        "Engine": "mysql",
+        "DBInstanceStatus": "stopping",
+        "MasterUsername": "root",
+        "Endpoint": {
+            "Address": "vishwa-database.clea0kqwgsnt.ap-south-1.rds.amazonaws.com",
+            "Port": 3306,
+            "HostedZoneId": "Z2VFMSZA74J7XZ"
+        },
+        "AllocatedStorage": 20,
+        "InstanceCreateTime": "2025-07-17T07:41:17.397000+00:00",
+        "PreferredBackupWindow": "19:26-19:56",
+        "BackupRetentionPeriod": 1,
+        "DBSecurityGroups": [],
+        "VpcSecurityGroups": [
+            {
+                "VpcSecurityGroupId": "sg-0ac9eca98f0dd4548",
+                "Status": "active"
+            }
+        ],
+        "DBParameterGroups": [
+            {
+                "DBParameterGroupName": "default.mysql8.0",
+                "ParameterApplyStatus": "in-sync"
+            }
+        ],
+        "AvailabilityZone": "ap-south-1a",
+        "DBSubnetGroup": {
+            "DBSubnetGroupName": "default-vpc-02ad468c3c544fc38",
+            "DBSubnetGroupDescription": "Created from the RDS Management Console",
+            "VpcId": "vpc-02ad468c3c544fc38",
+            "SubnetGroupStatus": "Complete",
+            "Subnets": [
+                {
+                    "SubnetIdentifier": "subnet-08b32141001925b29",
+                    "SubnetAvailabilityZone": {
+                        "Name": "ap-south-1b"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                },
+                {
+                    "SubnetIdentifier": "subnet-06e082ba0ec3a32a6",
+                    "SubnetAvailabilityZone": {
+                        "Name": "ap-south-1c"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                },
+                {
+                    "SubnetIdentifier": "subnet-00c452669a55c4781",
+                    "SubnetAvailabilityZone": {
+                        "Name": "ap-south-1a"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                }
+            ]
+        },
+        "PreferredMaintenanceWindow": "thu:06:28-thu:06:58",
+        "PendingModifiedValues": {},
+        "LatestRestorableTime": "2025-07-26T07:00:01+00:00",
+        "MultiAZ": false,
+        "EngineVersion": "8.0.41",
+        "AutoMinorVersionUpgrade": true,
+        "ReadReplicaDBInstanceIdentifiers": [],
+        "LicenseModel": "general-public-license",
+        "OptionGroupMemberships": [
+            {
+                "OptionGroupName": "default:mysql-8-0",
+                "Status": "in-sync"
+            }
+        ],
+        "PubliclyAccessible": true,
+        "StorageType": "gp2",
+        "DbInstancePort": 0,
+        "StorageEncrypted": true,
+        "KmsKeyId": "arn:aws:kms:ap-south-1:156916773321:key/723fc9bb-7605-47ac-b9ec-5153e1e33284",
+        "DbiResourceId": "db-3O2WAM4JFMLPZPQ6NIZC536DWY",
+        "CACertificateIdentifier": "rds-ca-rsa2048-g1",
+        "DomainMemberships": [],
+        "CopyTagsToSnapshot": true,
+        "MonitoringInterval": 0,
+        "DBInstanceArn": "arn:aws:rds:ap-south-1:156916773321:db:vishwa-database",
+        "IAMDatabaseAuthenticationEnabled": false,
+        "DatabaseInsightsMode": "standard",
+        "PerformanceInsightsEnabled": false,
+        "DeletionProtection": false,
+        "AssociatedRoles": [],
+        "MaxAllocatedStorage": 1000,
+        "TagList": [
+            {
+                "Key": "name",
+                "Value": "vishwa"
+            }
+        ],
+        "CustomerOwnedIpEnabled": false,
+        "BackupTarget": "region",
+        "NetworkType": "IPV4",
+        "StorageThroughput": 0,
+        "CertificateDetails": {
+            "CAIdentifier": "rds-ca-rsa2048-g1",
+            "ValidTill": "2026-07-17T07:39:59+00:00"
+        },
+        "DedicatedLogVolume": false,
+        "EngineLifecycleSupport": "open-source-rds-extended-support-disabled"
+    }
+}

@@ -6,10 +6,15 @@
 
 # Ignore bundler config.
 /.bundle
-
+#terraform
+/terraform/variable.tf
+/terraform/terraform.tfvars
+/terraform/.terraform.lock.hcl
+/terraform/.terraform
 # Ignore all environment files.
 /.env*
-
+#gitignore
+/.gitignore
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
